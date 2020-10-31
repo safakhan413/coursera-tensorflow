@@ -1,0 +1,4 @@
+main.py
+*.log
+venv/
+.idea/
