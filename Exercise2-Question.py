@@ -35,3 +35,13 @@ def train_mnist():
     history = model.fit(training_images, y_train, epochs=10, callbacks=[callbacks])
     # model fitting
     return history.epoch, history.history['acc'][-1]
+
+
+%%javascript
+<!-- Save the notebook -->
+IPython.notebook.save_checkpoint();
+
+%%javascript
+IPython.notebook.session.delete();
+window.onbeforeunload = null
+setTimeout(function() { window.close(); }, 1000);
