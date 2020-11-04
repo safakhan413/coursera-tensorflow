@@ -50,4 +50,3 @@ def train_mnist_conv():
     history = model.fit(training_images, training_labels, epochs=20, callbacks=[callbacks])
     # model fitting
     return history.epoch, history.history['acc'][-1]
-
